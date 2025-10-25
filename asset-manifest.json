@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/marriage-biodata/static/css/main.e64333ef.css",
+    "main.js": "/marriage-biodata/static/js/main.8d8fd89a.js",
+    "static/js/453.98402ef2.chunk.js": "/marriage-biodata/static/js/453.98402ef2.chunk.js",
+    "index.html": "/marriage-biodata/index.html",
+    "main.e64333ef.css.map": "/marriage-biodata/static/css/main.e64333ef.css.map",
+    "main.8d8fd89a.js.map": "/marriage-biodata/static/js/main.8d8fd89a.js.map",
+    "453.98402ef2.chunk.js.map": "/marriage-biodata/static/js/453.98402ef2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e64333ef.css",
+    "static/js/main.8d8fd89a.js"
+  ]
+}
