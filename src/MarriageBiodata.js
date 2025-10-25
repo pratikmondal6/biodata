@@ -1,78 +1,85 @@
 export default function MarriageBiodata() {
   return (
-    <div className="p-8 max-w-4xl mx-auto text-gray-800 font-sans bg-white shadow-xl rounded-xl space-y-8">
-      {/* Header */}
-      <header className="text-center border-b pb-4">
-        <h1 className="text-4xl font-extrabold text-indigo-700 tracking-wide">Pratik Mondal</h1>
-        <p className="text-sm text-pink-600 italic mt-1">A Journey Toward a Beautiful Beginning</p>
-        <p className="text-sm mt-2 text-blue-600">
-          <a href="https://drive.google.com/drive/folders/174ZiQwy6Rok0lTfa8fTp2HAl4tUzzjik?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline">Click here to view photos</a>
-        </p>
-      </header>
+    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <div className="max-w-4xl mx-auto p-6">
+        {/* Header / Hero - focused on biodata */}
+        <header className="bg-gradient-to-r from-indigo-50 via-pink-50 to-yellow-50 shadow rounded-lg p-6 flex gap-6 items-center">
+          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-2xl font-bold text-white">PM</div>
+          <div className="flex-1">
+            <h1 className="text-2xl font-extrabold text-gray-900">Pratik Mondal</h1>
+            <p className="text-sm text-gray-500 mt-1 italic">A Journey Toward a Beautiful Beginning</p>
+            <div className="mt-3 text-sm text-gray-700 flex items-center gap-3">
+              <span className="mr-3"><strong>Current Address:</strong> Kaiserslautern, Germany</span>
+              <a href="https://drive.google.com/drive/folders/174ZiQwy6Rok0lTfa8fTp2HAl4tUzzjik?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm px-2 py-1 border border-gray-200 rounded text-blue-600 hover:bg-blue-50">Photos</a>
+            </div>
+          </div>
+          {/* header right column removed to avoid duplicate details; details are listed below in Personal Details */}
+        </header>
 
-      {/* Personal Info Section */}
-      <section className="grid md:grid-cols-2 gap-6">
-        <div>
-          <h2 className="text-lg font-semibold text-indigo-600 mb-2">Personal Details</h2>
-          <ul className="text-sm space-y-1">
-            <li><strong>Name:</strong> Pratik Mondal</li>
-            <li><strong>Date of Birth:</strong> 6th April 1996</li>
-            <li><strong>Height:</strong> 5'6"+</li>
-            <li><strong>Weight:</strong> 79+/- kg</li>
-            <li><strong>Complexion:</strong> Light Brown</li>
+        {/* Main content: personal, family, relatives, education */}
+        <main className="mt-6 grid md:grid-cols-3 gap-6">
+          <section className="md:col-span-2 bg-white rounded-lg shadow p-6 space-y-4 border-l-4 border-indigo-300">
+            <h2 className="text-lg font-semibold text-indigo-700">Personal Details</h2>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li><strong>Name:</strong> Pratik Mondal</li>
+              <li><strong>Date of Birth:</strong> 6th April 1996</li>
+              <li><strong>Religion:</strong> Sanaton</li>
+              <li><strong>Complexion:</strong> Light Brown</li>
+              <li><strong>Height:</strong> 5'6"+</li>
+              <li><strong>Weight:</strong> 79+/- kg</li>
+            </ul>
+
+            {/* Education moved to its own section below */}
+          </section>
+
+          <aside className="bg-white rounded-lg shadow p-6 border-l-4 border-yellow-300">
+            <h3 className="text-md font-semibold text-yellow-700">Quick Facts</h3>
+            <ul className="text-sm text-gray-700 mt-3 space-y-2">
+              <li><strong>Marital Status:</strong> Unmarried</li>
+              <li><strong>Current Location:</strong> Kaiserslautern, Germany</li>
+            </ul>
+          </aside>
+        </main>
+
+        <section id="education" className="mt-6 bg-white rounded-lg shadow p-6 border-l-4 border-purple-300">
+          <h2 className="text-lg font-semibold text-purple-700">Education</h2>
+          <ul className="list-disc list-inside text-sm text-gray-700 mt-3 space-y-2">
+            <li><strong>SSC:</strong> NBPSC — 2012, GPA: 5.00</li>
+            <li><strong>HSC:</strong> Rifles College — 2014, GPA: 4.80</li>
+            <li><strong>B.Sc. in Computer Science:</strong> AIUB — 2015–2019, CGPA: 3.34</li>
+            <li><strong>M.Sc. in Computer Science:</strong> Technical University of Kaiserslautern — 2023–Present</li>
           </ul>
-        </div>
+        </section>
 
-        <div>
-          <h2 className="text-lg font-semibold text-indigo-600 mb-2">Address</h2>
-          <p className="text-sm">
-            <strong>Permanent Address:</strong> Nawabganj, Dhaka<br />
-            <strong>Family Address:</strong> Moghbazar, Dhaka<br /><strong>Current Address:</strong> Kaiserslautern, Germany
-          </p>
-        </div>
-      </section>
+        <section className="mt-6 bg-white rounded-lg shadow p-6 border-l-4 border-green-300">
+          <h2 className="text-lg font-semibold text-green-700">Family Details</h2>
+          <ul className="list-inside list-disc text-sm text-gray-700 mt-3 space-y-1">
+            <li><strong>Father:</strong> Sanaton Chandra Mondal — Businessman</li>
+            <li><strong>Mother:</strong> Sushma Mondal — Housewife</li>
+            <li><strong>Sibling:</strong> One younger brother</li>
+          </ul>
+        </section>
 
-      {/* Education */}
-      <section>
-        <h2 className="text-lg font-semibold text-indigo-600 mb-2">Education</h2>
-        <ul className="list-disc list-inside text-sm space-y-1">
-          <li>SSC: NBPSC, 2012 GPA: 5.00</li>
-          <li>HSC: Rifles College, 2014 GPA: 4.80</li>
-          <li>B.Sc. in Computer Science: AIUB, 2015–2019, CGPA: 3.34</li>
-          <li>M.Sc. in Computer Science: Technical University of Kaiserslautern, Germany (2023–Present)</li>
-        </ul>
-      </section>
+        <section className="mt-6 bg-white rounded-lg shadow p-6 border-l-4 border-pink-300">
+          <h2 className="text-lg font-semibold text-pink-700">Relatives</h2>
+          <ul className="list-inside list-disc text-sm text-gray-700 mt-3 space-y-1">
+            <li>Ajit Sarkar (Mama) — Principal of a college, Munshiganj</li>
+            <li>Shantonu Dey — Cousin sister's husband, BUET, Working at DDC</li>
+            <li>Shohag Mondal — Cousin, Working in Malta</li>
+            <li>Arup Sarkar — Cousin, Studying in Germany</li>
+          </ul>
+        </section>
 
-      {/* Profession */}
-      <section>
-        <h2 className="text-lg font-semibold text-indigo-600 mb-2">Profession</h2>
-        <ul className="list-disc list-inside text-sm space-y-1">
-          <li>Research Assistant Java Developer at Fraunhofer IEE, Germany (2024*, Part-time)</li>
-          <li>Software Engineer at greenable GmbH, Germany (2023)</li>
-          <li>Software Engineer at BRAC IT, Dhaka, Bangladesh (2019–2022)</li>
-        </ul>
-      </section>
+        <section id="contact" className="mt-6 bg-white rounded-lg shadow p-6 border-l-4 border-green-500">
+          <h2 className="text-lg font-semibold text-green-700">Contact</h2>
+          <p className="text-sm text-gray-700 mt-3">For marriage proposals or family inquiries, please reach out via WhatsApp.</p>
+          <div className="mt-4">
+            <a href="https://wa.me/4915754255758" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-600 text-white rounded-md text-sm no-underline hover:underline shadow hover:shadow-lg transform hover:-translate-y-0.5">+49 157 5425 5758 (WhatsApp)</a>
+          </div>
+        </section>
 
-      {/* Family Details */}
-      <section>
-        <h2 className="text-lg font-semibold text-indigo-600 mb-2">Family Details</h2>
-        <ul className="list-disc list-inside text-sm space-y-1">
-          <li>Father: Sanaton Chandra Mondal (Businessman)</li>
-          <li>Mother: Sushma Mondal (Housewife)</li>
-          <li>Sibling: Pulak Mondal (Younger Brother), Textile Engineer, AUST, currently working at DBL Group</li>
-        </ul>
-      </section>
-
-      {/* Relatives */}
-      <section>
-        <h2 className="text-lg font-semibold text-indigo-600 mb-2">Relatives</h2>
-        <ul className="list-disc list-inside text-sm space-y-1">
-          <li>Ajit Sarkar (Mama, Principal of a college, Munshiganj)</li>
-          <li>Shantonu Dey (Cousin sister's husband, BUET, Working at DDC)</li>
-          <li>Shohag Mondal (Cousin, Working in Malta)</li>
-          <li>Arup Sarkar (Cousin, Studying in Germany)</li>
-        </ul>
-      </section>
+        <footer className="mt-8 text-center text-xs text-gray-500">Information is correct to the best of my knowledge.</footer>
+      </div>
     </div>
   );
 }
