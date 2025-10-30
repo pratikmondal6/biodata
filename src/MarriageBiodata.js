@@ -38,18 +38,27 @@ export default function MarriageBiodata() {
               <li><strong>Marital Status:</strong> Unmarried</li>
               <li><strong>Current Location:</strong> Kaiserslautern, Germany</li>
               <li><strong>Family Address:</strong> Moghbazar, Dhaka</li>
-              <li><strong>Permanent Address:</strong> Nawabganj, Dhaka</li>
+              <li><strong>Permanent Address:</strong> Nawabganj, Dhaka</li> 
             </ul>
           </aside>
         </main>
 
+        <section id="work" className="mt-6 bg-white rounded-lg shadow p-6 border-l-4 border-indigo-300">
+          <h2 className="text-lg font-semibold text-indigo-700">Work Experience</h2>
+          <ul className="list-disc list-inside text-sm text-gray-700 mt-3 space-y-2">
+            <li><strong>Fraunhofer IEE</strong> — Research Assistant / Java Developer — 2024–Present (Part-time)</li>
+            <li><strong>greenable GmbH</strong> — Software Engineer — 2023</li>
+            <li><strong>BRAC IT</strong> — Software Engineer — 2019–2022</li>
+          </ul>
+        </section>
+
         <section id="education" className="mt-6 bg-white rounded-lg shadow p-6 border-l-4 border-purple-300">
           <h2 className="text-lg font-semibold text-purple-700">Education</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 mt-3 space-y-2">
-            <li><strong>SSC:</strong> NBPSC — 2012, GPA: 5.00</li>
-            <li><strong>HSC:</strong> Rifles College — 2014, GPA: 4.80</li>
-            <li><strong>B.Sc. in Computer Science:</strong> AIUB — 2015–2019, CGPA: 3.34</li>
             <li><strong>M.Sc. in Computer Science:</strong> Technical University of Kaiserslautern — 2023–Present</li>
+            <li><strong>B.Sc. in Computer Science:</strong> AIUB — 2015–2019, CGPA: 3.34</li>
+            <li><strong>HSC:</strong> Rifles College — 2014, GPA: 4.80</li>
+            <li><strong>SSC:</strong> NBPSC — 2012, GPA: 5.00</li>
           </ul>
         </section>
 
