@@ -37,6 +37,8 @@ export default function MarriageBiodata() {
             <ul className="text-sm text-gray-700 mt-3 space-y-2">
               <li><strong>Marital Status:</strong> Unmarried</li>
               <li><strong>Current Location:</strong> Kaiserslautern, Germany</li>
+              <li><strong>Family Address:</strong> Moghbazar, Dhaka</li>
+              <li><strong>Permanent Address:</strong> Nawabganj, Dhaka</li>
             </ul>
           </aside>
         </main>
