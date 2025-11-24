@@ -2,7 +2,7 @@
   "name": "marriage-biodata",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pratikmondal6.github.io/marriage-biodata",
+  "homepage": "https://pratikmondal6.github.io/biodata",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
